@@ -1,0 +1,13 @@
+* {
+    font-family: sans-serif;
+}
+
+#upload {
+    text-align: center;
+    position: relative;
+    top: 30vh;
+}
+
+#submit {
+    padding-top: 20px;
+}
