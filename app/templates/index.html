@@ -1,6 +1,11 @@
 {% load static %}
-<div id='index'>
-    {% block content %}
-    {% endblock %}
-</div>
-<link rel='stylesheet' href="{% static 'style.css'%}"/>
+<!DOCTYPE html>
+<head>
+    <link rel='stylesheet' href="{% static 'style.css'%}"/>
+</head>
+<body>
+    <div id='index'>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
