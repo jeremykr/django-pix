@@ -12,6 +12,7 @@ def index(request):
             return HttpResponse("That's not a valid image!")
         
     elif request.method == 'GET':
-        template = loader.get_template('index.html')
+        template = loader.get_template('upload_image.html')
         form = UploadImageForm()
         return HttpResponse(template.render({'form': form}, request))
+        

@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block content %}
+    <div id='upload'>
+        <h1>Upload an image.</h1>
+        <form action='/' method='post' enctype='multipart/form-data'>
+            {% csrf_token %}
+            <div>
+                {{ form }}
+            </div>
+            <div id='submit'>
+                <input  type='submit' value='Submit' />
+            </div> 
+        </form>
+    </div>
+{% endblock %}
